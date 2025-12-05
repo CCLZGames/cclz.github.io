@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCLZGAMES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="header-title">CCLZGAMES</h1>
+        <p class="header-subtitle">Creating immersive worlds and unforgettable gameplay.</p>
+        <button id="btnAllGames" class="btn btn-blue">All Games</button>
+    </header>
+
+    <!-- HOME SECTIONS -->
+    <main id="homePage">
+        <section class="card">
+            <h2>Our Mission</h2>
+            <p>
+                We craft engaging, story-driven games that spark imagination and deliver meaningful player experiences.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Join the Team</h2>
+            <p>
+                Passionate about game development? We're looking for designers, coders, and storytellers.
+            </p>
+        </section>
+    </main>
+
+    <!-- GAMES LIST PAGE -->
+    <main id="gamesPage" class="hidden">
+        <h2 class="section-title">All Games</h2>
+
+        <div class="game-card">
+            <img src="jumping_jimbo.png" class="game-img" alt="Jumping Jimbo">
+            <h3>Jumping Jimbo</h3>
+            <button class="btn btn-blue" id="btnJimbo">View Game</button>
+        </div>
+
+        <button class="btn btn-gray" id="btnBackHome">Back to Home</button>
+    </main>
+
+    <!-- JIMBO PAGE -->
+    <main id="jimboPage" class="hidden">
+        <h1>Jumping Jimbo</h1>
+        <img src="jumping_jimbo.png" class="game-large" alt="Jumping Jimbo">
+
+        <a href="https://cclzgamesitchio.itch.io/jumping-jimbo-part1" target="_blank">
+            <button class="btn btn-blue">Play on Itch.io</button>
+        </a>
+
+        <button class="btn btn-gray" id="btnBackGames">Back to Games</button>
+    </main>
+
+    <footer class="footer">
+        © <span id="year"></span> CCLZGAMES — All Rights Reserved
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
